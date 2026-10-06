@@ -60,7 +60,6 @@ export function createApp(
       !isValidDate(date) ||
       date < minDate ||
       date > maxDate ||
-      isSunday(date) ||
       !servicePackages.some((pack) => pack.id === service) ||
       !validString(name, 1, 100) ||
       !validString(phone, 6, 30) ||
